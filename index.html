@@ -1,0 +1,36 @@
+<!DOCTYPE  html>
+<html>
+
+<head>
+  <meta charset= "utf-8">
+  <title>Advert2</title>
+
+  
+  
+  
+</head>
+
+  <body>
+  <script>
+   const xhr = new XMLHttpRequest();
+   const url = 'http://localhost:3000/contacts';
+   xhr.open("POST",url,true);
+   xhr.setRequestHeader('content-type','application/json');
+
+   const message = {
+    
+      "name": "Wangila Joyce",
+      "subject": "Special Message",
+      "Message" : "Please register me"
+
+   }
+   const messageString = JSON.stringify(message);
+
+   xhr.send(messageString);
+  </script>
+
+   
+  
+  </body>
+  
+</html>
